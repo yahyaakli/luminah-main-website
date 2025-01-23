@@ -32,11 +32,9 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
-               "node_modules/swiper/swiper-bundle.min.css"
+              "src/styles.scss"
             ],
             "scripts": [
-               "node_modules/swiper/swiper-bundle.min.js"
             ]
           },
           "configurations": {
