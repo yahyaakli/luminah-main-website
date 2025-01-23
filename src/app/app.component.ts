@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ServicesComponent } from './components/services/services.component';
 import { KnowledgeGraphComponent } from './components/knowledge-graph/knowledge-graph.component';
+import { InnovationsComponent } from './components/innovations/innovations.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { KnowledgeGraphComponent } from './components/knowledge-graph/knowledge-
     RouterOutlet, 
     AboutUsComponent, 
     ServicesComponent,
-    KnowledgeGraphComponent
+    KnowledgeGraphComponent,
+    InnovationsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
