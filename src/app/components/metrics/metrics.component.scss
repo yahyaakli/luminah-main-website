@@ -1,0 +1,85 @@
+.metrics-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 2rem;
+    margin-top: 4rem;
+    
+  
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr; /* Side-by-side layout on larger screens */
+    }
+  
+    .metrics-section {
+      border-radius: 16px;
+      padding: 3rem;
+      color: #f8f8f8;
+      box-shadow: 0 15px 22px rgba(71, 21, 118, 0.3);
+  
+      .section-title {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+  
+        .text-gradient {
+          background: linear-gradient(90deg, #8a2be2, #ff00ff);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+  
+      .metrics-list {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          font-size: 1.2rem;
+          margin-bottom: 1.5rem;
+          position: relative;
+          padding-left: 2rem;
+  
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.4rem;
+            width: 8px;
+            height: 8px;
+            background: #8a2be2;
+            border-radius: 50%;
+            box-shadow: 0 0 6px rgba(138, 43, 226, 0.8);
+          }
+  
+          span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #8a2be2;
+            text-shadow: 0 0 4px rgba(138, 43, 226, 0.6);
+            margin-right: 0.5rem;
+          }
+        }
+      }
+    }
+  
+    .benefits-section {
+      background: #2a2a2e; /* Dark gray background */
+    }
+  
+    .sustainability-section {
+      background: #1e1e24; /* Slightly darker gray */
+    }
+  }
+  
+@media screen and (max-width: 768px) {
+    .metrics-container {
+      .metrics-section{
+        .section-title {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    
+}

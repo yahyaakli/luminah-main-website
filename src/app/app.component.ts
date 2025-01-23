@@ -4,6 +4,7 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ServicesComponent } from './components/services/services.component';
 import { KnowledgeGraphComponent } from './components/knowledge-graph/knowledge-graph.component';
 import { InnovationsComponent } from './components/innovations/innovations.component';
+import { MetricsComponent } from './components/metrics/metrics.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { InnovationsComponent } from './components/innovations/innovations.compo
     AboutUsComponent, 
     ServicesComponent,
     KnowledgeGraphComponent,
-    InnovationsComponent
+    InnovationsComponent,
+    MetricsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
