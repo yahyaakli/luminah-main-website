@@ -1,0 +1,32 @@
+<!-- Nav Toggle Button -->
+<button id="nav-toggle" class="button button-sm button-dot button-white" (click)="toggleNav()">
+    <span data-text="Menu">Menu</span>
+  </button>
+  
+  <!-- Nav Menu Box -->
+  <div class="nav-box" [class.active]="isNavOpen">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#about"><i class="bi bi-arrow-right"></i>About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services"><i class="bi bi-arrow-right"></i>Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio"><i class="bi bi-arrow-right"></i>Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#awards"><i class="bi bi-arrow-right"></i>Awards</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#testimonial"><i class="bi bi-arrow-right"></i>Testimonial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#blog"><i class="bi bi-arrow-right"></i>Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact"><i class="bi bi-arrow-right"></i>Contact</a>
+      </li>
+    </ul>
+  </div>
+  
