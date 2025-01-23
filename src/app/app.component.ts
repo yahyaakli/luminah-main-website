@@ -5,6 +5,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { KnowledgeGraphComponent } from './components/knowledge-graph/knowledge-graph.component';
 import { InnovationsComponent } from './components/innovations/innovations.component';
 import { MetricsComponent } from './components/metrics/metrics.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,8 @@ import { MetricsComponent } from './components/metrics/metrics.component';
     ServicesComponent,
     KnowledgeGraphComponent,
     InnovationsComponent,
-    MetricsComponent
+    MetricsComponent,
+    ContactComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
