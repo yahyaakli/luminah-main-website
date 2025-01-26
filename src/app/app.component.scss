@@ -7,3 +7,27 @@
     font-size: 2rem;
     color: white;
 }
+
+/* Define the keyframes for sliding in from the right */
+@keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px); /* Start off-screen to the right */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* End at the original position */
+    }
+  }
+  
+  /* Hidden state */
+  .section-hidden {
+    opacity: 0;
+    transform: translateX(100px); /* Off-screen to the right */
+  }
+  
+  /* Visible state with animation */
+  .section-visible {
+    animation: slideInFromRight 1s ease-out forwards; /* Apply the keyframes */
+  }
+  

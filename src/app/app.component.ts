@@ -6,21 +6,23 @@ import { KnowledgeGraphComponent } from './components/knowledge-graph/knowledge-
 import { InnovationsComponent } from './components/innovations/innovations.component';
 import { MetricsComponent } from './components/metrics/metrics.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ScrollAnimationDirective } from './directives/scroll-animation.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    RouterOutlet, 
-    AboutUsComponent, 
+    RouterOutlet,
+    AboutUsComponent,
     ServicesComponent,
     KnowledgeGraphComponent,
     InnovationsComponent,
     MetricsComponent,
-    ContactComponent
+    ContactComponent,
+    ScrollAnimationDirective,
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'luminah-ui';
