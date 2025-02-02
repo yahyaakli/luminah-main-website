@@ -1,0 +1,33 @@
+<header [ngClass]="{ 'scrolled': isScrolled }" class="header">
+    <div class="container-fluid">
+      <div class="header-wrapper">
+        <!-- Logo -->
+        <div class="header-logo">
+          <h2 class="logo-font">Luminah AI</h2>
+        </div>
+  
+        <!-- Navbar Toggle Button (Mobile) -->
+        <button class="menu-toggle" (click)="toggleMenu()">
+          <i class="bi bi-list"></i>
+        </button>
+  
+        <!-- Navigation Links -->
+        <nav class="header-nav" [class.active]="menuOpen">
+          <ul>
+            <li><a href="#services" (click)="closeMenu()">About</a></li>
+            <li><a href="#technology" (click)="closeMenu()">Our Technology</a></li>
+            <li><a href="#solutions" (click)="closeMenu()">Solutions</a></li>
+            <li><a href="#metrics" (click)="closeMenu()">Metrics</a></li>
+          </ul>
+        </nav>
+  
+        <!-- "Let's Talk" Button -->
+        <div class="header-btn">
+            <a class="button button-sm button-dot me-2 me-lg-3" href="#contact">
+                <span data-text="Let's Talk">Let's Talk</span>
+              </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  

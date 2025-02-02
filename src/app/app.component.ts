@@ -7,6 +7,7 @@ import { InnovationsComponent } from './components/innovations/innovations.compo
 import { MetricsComponent } from './components/metrics/metrics.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ScrollAnimationDirective } from './directives/scroll-animation.directive';
+import { HeaderComponent } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ import { ScrollAnimationDirective } from './directives/scroll-animation.directiv
     MetricsComponent,
     ContactComponent,
     ScrollAnimationDirective,
+    HeaderComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
