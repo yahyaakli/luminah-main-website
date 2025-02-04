@@ -79,6 +79,24 @@
     z-index: 1; /* Ensure the overlay sits above the background but behind the content */
 }
 
+.nuclear-bg-4{
+    position: relative; /* Ensure positioning for overlay */
+    background: url('/assets/images/reactor.png') no-repeat center center; /* Add the image */
+    background-size: cover; /* Make the image cover the entire section */
+    color: white; /* Ensure text is visible over the background */
+}
+
+.nuclear-bg-4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(0, 0, 0, 0.7); /* Black overlay with transparency */
+    // z-index: 1; /* Ensure the overlay sits above the background but behind the content */
+}
+
 .nuclear-bg-3 .container {
     position: relative;
     z-index: 2; /* Ensure the content is above the overlay */

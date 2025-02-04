@@ -8,6 +8,7 @@ import { MetricsComponent } from './components/metrics/metrics.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ScrollAnimationDirective } from './directives/scroll-animation.directive';
 import { HeaderComponent } from './components/header/header.component';
+import { NuclearFusionImportanceComponent } from './components/nuclear-fusion-importance/nuclear-fusion-importance.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { HeaderComponent } from './components/header/header.component';
     MetricsComponent,
     ContactComponent,
     ScrollAnimationDirective,
-    HeaderComponent
+    HeaderComponent,
+    NuclearFusionImportanceComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
