@@ -9,6 +9,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ScrollAnimationDirective } from './directives/scroll-animation.directive';
 import { HeaderComponent } from './components/header/header.component';
 import { NuclearFusionImportanceComponent } from './components/nuclear-fusion-importance/nuclear-fusion-importance.component';
+import { FusionChallengesComponent } from './components/fusion-challenges/fusion-challenges.component';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,8 @@ import { NuclearFusionImportanceComponent } from './components/nuclear-fusion-im
     ContactComponent,
     ScrollAnimationDirective,
     HeaderComponent,
-    NuclearFusionImportanceComponent
+    NuclearFusionImportanceComponent,
+    FusionChallengesComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

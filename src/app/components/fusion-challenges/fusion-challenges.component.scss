@@ -1,0 +1,115 @@
+/* Section Layout */
+.challenges-section {
+    position: relative;
+    background: radial-gradient(circle, rgba(10, 10, 25, 1) 30%, rgba(0, 0, 0, 1) 100%);
+    padding: 80px 20px;
+    overflow: hidden;
+  }
+  
+  /* Title Styling */
+  .challenges-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Energy Text Gradient */
+  .energy-text {
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Floating Circles */
+  .challenges-floating {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .challenge-circle {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 136, 0, 0.4);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: float 5s infinite ease-in-out;
+  }
+  
+  /* Circle Hover & Active States */
+  .challenge-circle:hover,
+  .challenge-circle.active {
+    background: rgba(255, 136, 0, 0.5);
+    box-shadow: 0 0 15px rgba(255, 136, 0, 0.8);
+    transform: scale(1.2);
+  }
+  
+  /* Floating Animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Challenge Description */
+  .challenges-content {
+    margin-top: 30px;
+    min-height: 80px; /* Ensures space for text */
+  }
+  
+  .challenge-text {
+    font-size: 1.3rem;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 136, 0, 0.3);
+    backdrop-filter: blur(8px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    // opacity: 0;/
+    transform: translateY(10px);
+  }
+  
+  /* Show when active */
+  .challenge-text.ng-trigger {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .challenges-title {
+      font-size: 2rem;
+    }
+  
+    .challenge-circle {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+    }
+  
+    .challenge-text {
+      font-size: 1.1rem;
+    }
+  }
+  

@@ -1,0 +1,25 @@
+<div id="challenges" class="challenges-section">
+    <div class="container text-center">
+      <h1 class="challenges-title">
+        The Challenges of <span class="energy-text">Nuclear Fusion</span>
+      </h1>
+  
+      <!-- Floating Circle Navigation -->
+      <div class="challenges-floating">
+        <div *ngFor="let challenge of challenges; let i = index" 
+             class="challenge-circle" 
+             [class.active]="activeChallenge === i"
+             (click)="toggleChallenge(i)">
+          {{ i + 1 }}
+        </div>
+      </div>
+  
+      <!-- Challenge Descriptions -->
+      <div class="challenges-content">
+        <p class="challenge-text" *ngIf="activeChallenge !== null">
+          {{ challenges[activeChallenge] }}
+        </p>
+      </div>
+    </div>
+  </div>
+  
