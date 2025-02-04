@@ -1,0 +1,60 @@
+.fusion-innovation-container {
+    width: 100%;
+    padding: 5rem 2rem;
+    background: radial-gradient(circle at top, rgba(10, 10, 25, 0.5) 40%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .text-highlight {
+    background: linear-gradient(45deg, #8a2be2, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .intro {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+    .feature {
+      text-align: left;
+      border-left: 3px solid #8a2be2; // Adds a subtle left-side accent
+      padding-left: 1rem;
+  
+      h2 {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: white;
+      }
+  
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #d0d0d0;
+      }
+    }
+  }
+  

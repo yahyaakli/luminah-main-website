@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
   styleUrl: './fusion-challenges.component.scss'
 })
 export class FusionChallengesComponent {
-  activeChallenge: number | null = null;
+  activeChallenge: number = 0;
 
   challenges = [
     "Extreme Conditions: Fusion reactions require heating plasma to over 100 million degrees Celsius and maintaining this state under extreme pressure.",
@@ -21,7 +21,7 @@ export class FusionChallengesComponent {
   ];
 
   toggleChallenge(index: number): void {
-    this.activeChallenge = this.activeChallenge === index ? null : index;
+    this.activeChallenge = this.activeChallenge === index ? 0 : index;
   }
 }
 

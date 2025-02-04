@@ -10,6 +10,7 @@ import { ScrollAnimationDirective } from './directives/scroll-animation.directiv
 import { HeaderComponent } from './components/header/header.component';
 import { NuclearFusionImportanceComponent } from './components/nuclear-fusion-importance/nuclear-fusion-importance.component';
 import { FusionChallengesComponent } from './components/fusion-challenges/fusion-challenges.component';
+import { FusionInnovationComponent } from './components/fusion-innovation/fusion-innovation.component';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,8 @@ import { FusionChallengesComponent } from './components/fusion-challenges/fusion
     ScrollAnimationDirective,
     HeaderComponent,
     NuclearFusionImportanceComponent,
-    FusionChallengesComponent
+    FusionChallengesComponent,
+    FusionInnovationComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
